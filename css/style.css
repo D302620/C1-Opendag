@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes link{
+    0%   {font-size: 25px}
+    10%   {font-size: 25.5px}
+    20%   {font-size: 26px}
+    30%   {font-size: 26.5px}
+    40%   {font-size: 27px}
+    50%   {font-size: 27.5px}
+    60%   {font-size: 28px}
+    70%   {font-size: 28.5px}
+    80%   {font-size: 29px}
+    90%   {font-size: 29.5px}
+    100%   {font-size: 30px}
+}
+
+@keyframes linkreverse{
+    0%   {font-size: 30px}
+    10%   {font-size: 29.5px}
+    20%   {font-size: 29px}
+    30%   {font-size: 28.5px}
+    40%   {font-size: 28px}
+    50%   {font-size: 27.5px}
+    60%   {font-size: 27px}
+    70%   {font-size: 26.5px}
+    80%   {font-size: 26px}
+    90%   {font-size: 25.5px}
+    100%   {font-size: 25px}
+}
+
+body{
+    background-color: #69197c;
+}
+
+header{
+    background-color: #fa339c;
+    border-bottom: #78034a 5px solid;
+    animation-name: link;
+}
+
+.header {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.header img{
+    width: 125px;
+    margin: 15px 0;
+}
+
+.header a{
+    text-decoration: none;
+    font-family: arial;
+    color: #ffcc00;
+    font-size: 25px;
+    margin: 0 15px;
+    transition: color 0.2s ease-in-out;
+    transition: 0.2s ;
+}
+
+.header a:hover{
+    color: white;
+    text-decoration: underline;
+    animation-name: link;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.header a:not(:hover) {
+    animation: linkreverse 0.5s forwards;
+}
+
+main{
+    padding: 50px;
+    margin: 0 20px;
+    background-color: #ffcc00;
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 50px;
+}
+
+
+
+
