@@ -32,12 +32,12 @@
 }
 
 body{
-    background-color: #69197c;
+    background-color: black;
 }
 
 header{
-    background-color: #fa339c;
-    border-bottom: #78034a 5px solid;
+    background-color: #03357c;
+    border-bottom: #0050ff 5px solid;
     animation-name: link;
 }
 
@@ -80,11 +80,37 @@ header{
 
 main{
     padding: 50px;
-    margin: 0 20px;
     background-color: #ffcc00;
     margin: 0 auto;
+    margin-top: 50px;
     width: 80%;
-    border-radius: 50px;
+    border-radius: 15px;
+    box-shadow: #03357c 5px 5px ;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial;
+}
+
+.image img{
+    background-color: black;
+    border-radius: 125px;
+
+}
+
+.image h1{
+    color: #ffcc00;
+    display: inline;
+    background-color: black;
+    border-radius: 15px;
+    margin: 10px 0px;
+    padding: 10px;
+
 }
 
 
