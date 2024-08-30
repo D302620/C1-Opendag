@@ -32,12 +32,12 @@
 }
 
 body{
-    background-color: black;
+    background-color: white;
 }
 
 header{
     background-color: #03357c;
-    border-bottom: #0050ff 5px solid;
+    border-bottom: #ffcc00 5px solid;
     animation-name: link;
 }
 
@@ -80,12 +80,12 @@ header{
 
 main{
     padding: 50px;
-    background-color: #ffcc00;
+    background-color: #03357c;
     margin: 0 auto;
     margin-top: 50px;
     width: 80%;
     border-radius: 15px;
-    box-shadow: #03357c 5px 5px ;
+    box-shadow: #ffcc00 5px 5px ;
 }
 
 .image{
@@ -111,6 +111,44 @@ main{
     margin: 10px 0px;
     padding: 10px;
 
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+main h1{
+    width: 30%;
+    text-align: center;
+    margin: 25px 0;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: #ffcc00 solid 2px;
+    font-family: arial;
+}
+
+.schedule {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.schedule img{
+    width: 500px;
+    border-radius: 20px;
+    border: #ffcc00 solid 2px;
+}
+
+.schedule p{
+    background-color: white;
+    border-radius: 20px;
+    border: #ffcc00 solid 2px;
+    font-family: arial;
+    margin: 0 5px;
+    padding: 10px 10px;
 }
 
 
