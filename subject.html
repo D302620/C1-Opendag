@@ -16,27 +16,76 @@
             </div>
         </header>
         <main>
-            <div class="native-block">
-                <h1>Native</h1>
-                <div class="native-images">
-                    <img src="img/python.png" alt="python">
-                    <img src="img/C-sharp.png" alt="C#">
+            <div class="slideButtons">
+                <span onclick="currentSlide(1)">Native</span>
+                <span onclick="currentSlide(2)">Web</span>
+
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlide fade">
+                    <div class="native-block">
+                        <h1>Native</h1>
+                        <div class="native-images">
+                            <img src="img/python.png" alt="python">
+                            <img src="img/C-sharp.png" alt="C#">
+                        </div>
+                        <p>je leert hoe dat je native applicatie's moet maken. <br>in het eerste schooljaar zal je leren programeren in python en C#</p>
+                    </div>
                 </div>
-                <p>je leert hoe dat je native applicatie's moet maken. <br>in het eerste schooljaar zal je leren programeren in python en C#</p>
-            </div> 
-            <div class="web-block">
-                <h1>Web</h1>
-                <div class="web-images">
-                    <img src="img/HTML.png" alt="html">
-                    <img src="img/PHP.png" alt="php">
-                    <img src="img/C-sharp.png" alt="css">
+            </div>
+            <div class="slideshow-container">
+                <div class="mySlide fade">
+                    <div class="web-block">
+                        <h1>Web</h1>
+                        <div class="web-images">
+                            <img src="img/HTML.png" alt="html">
+                            <img src="img/PHP.png" alt="php">
+                            <img src="img/C-sharp.png" alt="css">
+                        </div>
+                        <p>je leert hoe dat je websites moet maken en hoe je deze online kan zetten. <br>je zult bij web leren programeren met html, php en css</p>
+                    </div>
                 </div>
-                <p>je leert hoe dat je websites moet maken en hoe je deze online kan zetten. <br>je zult bij web leren programeren met html, php en css</p>
             </div>   
+            
         </main>
         <footer>
 
         </footer>
     </body>
-
 </html>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlide");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
