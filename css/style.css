@@ -82,7 +82,7 @@ header{
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 70%;
+    width: 80%;
     padding: 50px;
     background-color: #03357c;
     border-radius: 15px;
@@ -96,7 +96,7 @@ header{
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 70%;
+    width: 80%;
     padding: 50px;
     background-color: #03357c;
     border-radius: 15px;
@@ -154,7 +154,7 @@ main h1{
 .schedule img{
     width: 700px;
     border-radius: 20px;
-    border: #ffcc00 solid 2px;
+    box-shadow: black 1px 1px 5px 5px;
 }
 
 .schedule p{
@@ -179,7 +179,7 @@ main h1{
     width: 700px;
     background-color: white;
     border-radius: 20px;
-    border: #ffcc00 2px solid;
+    box-shadow: black 1px 1px 5px 5px;
 }
 
 .year p{
@@ -196,7 +196,7 @@ main h1{
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 70%;
+    width: 80%;
     padding: 50px;
     background-color: #03357c;
     border-radius: 15px;
@@ -207,12 +207,90 @@ main h1{
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 70%;
+    width: 80%;
     padding: 50px;
     background-color: #03357c;
     border-radius: 15px;
     box-shadow: #ffcc00 5px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 }
+
+.native-block p{
+    background-color: white;
+    border-radius: 20px;
+    border: #ffcc00 solid 2px;
+    font-family: arial;
+    margin: 0px 10px;
+    margin-top: 30px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.native-block h1{
+    width: 30%;
+    text-align: center;
+    margin: 25px 0;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: #ffcc00 solid 2px;
+    font-family: arial;
+}
+
+.native-images{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: black 1px 1px 5px 5px;
+}
+
+.native-images img{
+    width: 300px;
+    
+}
+
+.web-block{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    padding: 50px;
+    background-color: #03357c;
+    border-radius: 15px;
+    box-shadow: #ffcc00 5px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.web-images{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: black 1px 1px 5px 5px;
+}
+
+.web-images img{
+    width: 300px;
+}
+
+
 
 
 
