@@ -146,13 +146,13 @@ main h1{
 
 .schedule{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .schedule img{
-    width: 450px;
+    width: 700px;
     border-radius: 20px;
     border: #ffcc00 solid 2px;
 }
@@ -163,20 +163,23 @@ main h1{
     border: #ffcc00 solid 2px;
     font-family: arial;
     margin: 0px 10px;
+    margin-top: 30px;
     padding: 10px 10px;
+    text-align: center;
 }
 
 .year{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
 .year img{
-    width: 450px;
+    width: 700px;
     background-color: white;
     border-radius: 20px;
+    border: #ffcc00 2px solid;
 }
 
 .year p{
@@ -185,6 +188,31 @@ main h1{
     border: #ffcc00 solid 2px;
     font-family: arial;
     margin: 0px 10px;
+    margin-top: 30px;
     padding: 10px 10px;
 }
+
+.year-block{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    padding: 50px;
+    background-color: #03357c;
+    border-radius: 15px;
+    box-shadow: #ffcc00 5px 5px;
+}
+
+.native-block{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    padding: 50px;
+    background-color: #03357c;
+    border-radius: 15px;
+    box-shadow: #ffcc00 5px 5px ;
+}
+
+
 
