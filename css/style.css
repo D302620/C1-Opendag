@@ -136,6 +136,7 @@ header{
 
 main{
     margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 main h1{
@@ -296,7 +297,7 @@ main h1{
 }
 
 .native-images img{
-    width: 250px;
+    width: 150px;
     
 }
 
@@ -401,8 +402,12 @@ main h1{
 }
 
 .pro-images img{
-    width: 250px;
-    padding: 50px;
+    width: 150px;
+    padding: 10px 0px;
+}
+
+.pra-block{
+    
 }
 
 .mySlide{
@@ -461,7 +466,47 @@ main h1{
     to {opacity: 1}
   }
 
+  .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 50px;
+    margin: 0 auto;
+    width: 80%;
+  }
 
+.griditem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #03357c;
+    padding: 50px 50px;
+}
+
+.griditem img{
+    width: 200px;
+    border-radius: 9999px;
+    border: #ffcc00 solid 2px;
+}
+
+.teacher-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px 10px;
+    background-color: white;
+    box-shadow: 1px 1px 2px 2px;
+    border-radius: 20px;
+}
+
+.teacher-info h2{
+    font-family: Arial;
+}
+
+.teacher-info p{
+    font-family: Arial;
+}
 
 
 
