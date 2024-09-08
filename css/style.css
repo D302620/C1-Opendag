@@ -38,6 +38,9 @@ body{
 header{
     background-color: #03357c;
     border-bottom: #ffcc00 5px solid;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .header {
@@ -89,8 +92,6 @@ header{
 
 }
 
-
-
 .info-block{
     margin: 0 auto;
     margin-top: 50px;
@@ -132,6 +133,11 @@ header{
     flex-direction: row;
     justify-content: center;
 }
+
+main{
+    margin-top: 150px;
+}
+
 main h1{
     width: 30%;
     text-align: center;
@@ -189,6 +195,7 @@ main h1{
     margin: 0px 10px;
     margin-top: 30px;
     padding: 10px 10px;
+    text-align: center;
 }
 
 .year-block{
@@ -202,10 +209,21 @@ main h1{
     box-shadow: #ffcc00 5px 5px;
 }
 
+.button span{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+.accalerated{
+    display: none;
+}
+
 .native-block{
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
     width: 80%;
     padding: 50px;
     background-color: #03357c;
@@ -253,14 +271,12 @@ main h1{
 }
 
 .native-images img{
-    width: 150px;
+    width: 250px;
     
 }
 
 .web-block{
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
     width: 80%;
     padding: 50px;
     background-color: #03357c;
@@ -311,6 +327,59 @@ main h1{
     font-family: arial;
 }
 
+.pro-block{
+    margin: 0 auto;
+    width: 80%;
+    padding: 50px;
+    background-color: #03357c;
+    border-radius: 15px;
+    box-shadow: #ffcc00 5px 5px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.pro-block p{
+    background-color: white;
+    border-radius: 20px;
+    border: #ffcc00 solid 2px;
+    font-family: arial;
+    margin: 0px 10px;
+    margin-top: 30px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.pro-block h2{
+    width: 30%;
+    text-align: center;
+    margin: 25px 0;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: #ffcc00 solid 2px;
+    font-family: arial;
+}
+
+.pro-images{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: black 1px 1px 5px 5px;
+}
+
+.pro-images img{
+    width: 250px;
+    padding: 50px;
+}
+
 .mySlide{
     display: none;
 }
@@ -319,11 +388,31 @@ main h1{
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 10px 2px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
+
+.slideButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.slideButtons span{
+    font-family: arial;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #03357c;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px black;
+    transition: ease background-color 0.6s;
+    margin: 10px 5px;
+    padding: 5px 5px;
 }
 
 .active, .dot:hover {
