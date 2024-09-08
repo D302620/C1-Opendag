@@ -65,7 +65,7 @@ header{
     font-size: 25px;
     margin: 0 15px;
     transition: color 0.2s ease-in-out;
-    transition: 0.2s ;
+    transition: 0.2s;
 }
 
 .header a:hover{
@@ -209,17 +209,42 @@ main h1{
     box-shadow: #ffcc00 5px 5px;
 }
 
-.button span{
+
+#button p{
     display: flex;
     justify-content: center;
     background-color: white;
-    border-radius: 20px;
-    margin: 10px 10px;
+    font-family: arial;
     padding: 10px 10px;
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 10%;
+    transition: black 0.2s ease-in-out;
+    transition: 0.2s;
+    
+    
+    
 }
 
-.accalerated{
+#button p:hover{
+    cursor: pointer;
+    background-color: #bbb;
+    transform: scale(1.1, 1.1);
+}
+#accalerated{
     display: none;
+    justify-content: center;
+    background-color: white;
+    font-family: arial;
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 50%;
+    padding: 10px;
+    border: #ffcc00 solid 2px;
+}
+
+#accalerated p{
+    text-align: center;
 }
 
 .native-block{
@@ -413,6 +438,12 @@ main h1{
     transition: ease background-color 0.6s;
     margin: 10px 5px;
     padding: 5px 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.slideButtons span:hover{
+    transform: scale(1.1, 1.1);
+
 }
 
 .active, .dot:hover {
@@ -429,6 +460,7 @@ main h1{
     from {opacity: .4}
     to {opacity: 1}
   }
+
 
 
 

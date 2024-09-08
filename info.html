@@ -37,11 +37,11 @@
                 <img src="img/Opleidingsoverzicht3.png" alt="overzicht">
                 <p>Het leerjaar is opgedeeld in blokken. in het eerste leerjaar zal je beginnen met blok A en B.<br>In het volgende leerjaar zal je beginnen met C met voorbereiding van de stage en in blok D de stage zelf</p>
             </div>
-            <div class="button">
+            <div id="button">
                 <p onclick="Show()">Versnellen</p>
             </div>
-            <div class="accalerated">
-                <p>eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+            <div id="accalerated">
+                <p>Bij versnellen sla je 1 jaar over en rond je de opleiding af in 3 jaar in plaats van 4 jaar.<br>er zal tijdens blok A worden geken naar je prestatie's en hier aan uit zal worden besloten of dat je kan vernsellen</p>
             </div>
         </div>  
     </main>
@@ -52,7 +52,8 @@
 
 <script>
     function Show(){
-        document.getElementsByClassName("button").style.color = 'red';
+        document.getElementById("accalerated").style.display = 'flex';
+        document.getElementById("button").style.display = 'none'
     }
 </script>
 </html>
