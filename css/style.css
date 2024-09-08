@@ -552,6 +552,21 @@ main h1{
     font-family: Arial;
 }
 
+footer{
+    background-color: #03357c;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top: #ffcc00 5px solid;
+}
+
+footer p{
+    color: black;
+    padding: 10px 0px;
+    font-size: 50px;
+}
+
 
 
 
