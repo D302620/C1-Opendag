@@ -135,8 +135,8 @@ header{
 }
 
 main{
-    margin-top: 150px;
-    margin-bottom: 50px;
+    margin-top: 105px;
+    margin-bottom: 40px;
 }
 
 main h1{
@@ -516,6 +516,12 @@ main h1{
     gap: 50px 50px;
     margin: 0 auto;
     width: 80%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .grid{
+        grid-template-columns: 1fr 1fr ;
+    }
   }
 
 .griditem{
